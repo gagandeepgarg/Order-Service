@@ -1,0 +1,3 @@
+D:\Git\order\Order-Service\OrderService\obj\Debug\netcoreapp2.2\OrderService.csproj.CoreCompileInputs.cache
+D:\Git\order\Order-Service\OrderService\obj\Debug\netcoreapp2.2\OrderService.AssemblyInfoInputs.cache
+D:\Git\order\Order-Service\OrderService\obj\Debug\netcoreapp2.2\OrderService.AssemblyInfo.cs
