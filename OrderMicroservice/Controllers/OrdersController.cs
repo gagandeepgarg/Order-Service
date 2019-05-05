@@ -34,21 +34,21 @@ namespace OrderMicroservice.Controllers
 
         // POST api/values
         [HttpPost]
-        public async void Post([FromBody] Order orderVal)
+        public async Task Post([FromBody] Order orderVal)
         {
             await _orderManager.SaveOrder(orderVal);
         }
 
         // PUT api/values/5
-        [HttpPut("{id}")]
-        public async void Put(int id, [FromBody] Order orderVal)
+        [HttpPut]
+        public async Task Put([FromBody] Order orderVal)
         {
-            await _orderManager.UpdateOrder(id, orderVal);
+            await _orderManager.UpdateOrder(orderVal);
         }
 
         // DELETE api/values/5
         [HttpDelete("{id}")]
-        public async void Delete(int id)
+        public async Task Delete(int id)
         {
             await _orderManager.DeleteOrder(id);
         }

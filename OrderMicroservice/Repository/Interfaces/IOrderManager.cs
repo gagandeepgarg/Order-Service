@@ -13,7 +13,7 @@ namespace OrderMicroservice.Repository.Interfaces
         Task<List<Order>> GetAllOrders();
         Task<Order> GetOrderById(int id);
         Task SaveOrder(Order orderVal);
-        Task UpdateOrder(int id, Order orderVal);
+        Task UpdateOrder(Order orderVal);
         Task DeleteOrder(int id);
     }
 }

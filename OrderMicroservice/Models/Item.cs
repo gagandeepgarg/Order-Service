@@ -11,7 +11,7 @@ namespace OrderMicroservice.Models
         public string ItemName { get; set; }
         public int CategoryId { get; set; }
         public long PricePerUnit { get; set; }
-        public int MeasurementUnitName { get; set; }
+        public int MeasurementUnit { get; set; }
         public DateTime CreatedOn { get; set; }
         public string CreatedBy { get; set; }
         public DateTime UpdatedOn { get; set; }

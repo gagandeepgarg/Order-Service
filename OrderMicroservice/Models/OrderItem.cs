@@ -11,7 +11,7 @@ namespace OrderMicroservice.Models
         public int ItemId { get; set; }
         public string ItemName { get; set; }
         public long PricePerUnit { get; set; }
-        public int MeasurementUnitName { get; set; }
+        public int MeasurementUnit { get; set; }
         public int OrderId { get; set; }
         public int ItemCount { get; set; }
     }

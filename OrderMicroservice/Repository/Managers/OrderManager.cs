@@ -20,12 +20,12 @@ namespace OrderMicroservice.Repository.Managers
 
         public async Task<List<Order>> GetAllOrders()
         {
-            return await _dbContext.Orders.ToListAsync();
+            return await _dbContext.Order.ToListAsync();
         }
 
         public async Task<Order> GetOrderById(int id)
         {
-            return await _dbContext.Orders.Where(o => o.Id == id).FirstOrDefaultAsync();
+            return await _dbContext.Order.Where(o => o.Id == id).FirstOrDefaultAsync();
         }
 
         public async Task SaveOrder(Order orderVal)
@@ -34,7 +34,7 @@ namespace OrderMicroservice.Repository.Managers
             await _dbContext.SaveChangesAsync();
         }
 
-        public async Task UpdateOrder(int id, Order orderVal)
+        public async Task UpdateOrder(Order orderVal)
         {
             _dbContext.Update(orderVal);
             await _dbContext.SaveChangesAsync();
@@ -42,7 +42,7 @@ namespace OrderMicroservice.Repository.Managers
         public async Task DeleteOrder(int id)
         {
             var order = await GetOrderById(id);
-            _dbContext.Orders.Remove(order);
+            _dbContext.Order.Remove(order);
         }
     }
 }

@@ -79,8 +79,7 @@ namespace OrderMicroservice
         {
             //Service and data access dependencies  
             services.AddScoped<IOrderManager, OrderManager>();
-            //services.AddScoped<IDashboardService, DashboardService>();
-            //services.AddScoped<IDashboardDataAccess, DashboardDataAccess>();
+            
 
         }
     }
